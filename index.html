@@ -15,7 +15,7 @@
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
+    <img src="assets/img/logo.png" alt="Logo">
     <p>Kiara's Site</p>
   </a>
 </div>
@@ -26,7 +26,7 @@
       <div class="l-wrapper">
         <header class="header">
           <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
+            <img src="assets/img/logo.png" alt="Logo">
             <p>Kiara's Site</p>
           </a>
           <button class="header--cta cta">Message Me</button>
@@ -202,10 +202,10 @@
             <div class="hire">
               <h2>Contact</h2>
               <!-- form setup -->
-              <form class="work-request" method="post" action="contact-form-process.php" enctype="multipart/form-data" name=”EmailForm”>
+              <form class="work-request" method="POST" action="https://formspree.io/f/xpzbwyby" enctype="multipart/form-data" name=”EmailForm”>
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="job opportunity">
+                    <input id="opt-1" type="checkbox" value="job opportunity" name="job opportunity">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -215,7 +215,7 @@
                       </svg>
                       Job Interest
                     </label>
-                    <input id="opt-2" type="checkbox" value="inquiry">
+                    <input id="opt-2" type="checkbox" value="inquiry" name="inquiry">
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -225,7 +225,7 @@
                       </svg>
                       Inquiry
                     </label>
-                    <input id="opt-3" type="checkbox" value="other">
+                    <input id="opt-3" type="checkbox" value="other" name="other">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -239,16 +239,16 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false" required>
+                    <input id="name" type="text" spellcheck="false" required name="name"> 
                     <label for="name">Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false" required>
+                    <input id="email" type="email" spellcheck="false" required name="_replyto">
                     <label for="email">Email</label>
                   </div>
                 </div>
                 <div class="information-message">
-                  <textarea style="color: black" id="message" name="information-message" rows="4" cols="45"></textarea>
+                  <textarea style="color: black" id="message" rows="4" cols="45" name="message"></textarea>
                   <br>
                   <br>
                 </div>
